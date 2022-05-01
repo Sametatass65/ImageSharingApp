@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "820851937197",
+    "project_id": "imageshared-9cb32",
+    "storage_bucket": "imageshared-9cb32.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:820851937197:android:52fa63750e305fadea5b24",
+        "android_client_info": {
+          "package_name": "com.smt.imageshared"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "820851937197-7avcsjou2kr2kfbnmpie845dkcpucbt2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4W8G66Gbm3LCiVdNRXWdW2F-GSU2YKjc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "820851937197-7avcsjou2kr2kfbnmpie845dkcpucbt2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
