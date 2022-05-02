@@ -45,12 +45,15 @@ class ImageSharedActivity : AppCompatActivity() {
         val uuid = UUID.randomUUID()
         val imageName = "${uuid}.jpg"
         val imageReference = reference.child("images").child(imageName)
+       // println("ilk ${imageReference}")
+
 
         if (selectedImage != null){
 
-            imageReference.putFile(selectedImage!!).addOnSuccessListener  {taskSnapstop->
-                val storageUri = FirebaseStorage.getInstance().reference.child("images").child(imageName)
-                storageUri.downloadUrl.addOnCompleteListener { uri->
+           imageReference.putFile(selectedImage!!).addOnSuccessListener  {
+                val storageUri = reference.child("images").child(imageName)
+                storageUri.downloadUrl.addOnSuccessListener { uri->
+                    println(" uri : ${uri.toString()}")
                     val selectedImageUri = uri.toString()
                     val currentUserEmail = auth.currentUser?.email.toString()
                     val commentUser = commentText.text.toString()

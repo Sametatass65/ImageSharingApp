@@ -76,6 +76,9 @@ class MainMenuActivity : AppCompatActivity() {
             val intent = Intent(this , LogInActivity :: class.java)
             startActivity(intent)
             finish()
+        }else if (item.itemId == R.id.loaction){
+            val intent = Intent(this, MapsActivity :: class.java)
+            startActivity(intent)
         }
 
         return super.onOptionsItemSelected(item)
