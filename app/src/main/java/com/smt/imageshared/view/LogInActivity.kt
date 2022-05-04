@@ -1,4 +1,4 @@
-package com.smt.imageshared
+package com.smt.imageshared.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.ktx.Firebase
+import com.smt.imageshared.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class LogInActivity : AppCompatActivity() {
@@ -18,7 +18,7 @@ class LogInActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
         val currentUser = auth.currentUser
         if (currentUser  !=  null){
-            val intent = Intent(this,MainMenuActivity :: class.java)
+            val intent = Intent(this, MainMenuActivity :: class.java)
             startActivity(intent)
             finish()
         }
@@ -27,7 +27,7 @@ class LogInActivity : AppCompatActivity() {
     fun Register(view : View){
         auth.createUserWithEmailAndPassword(emailText.text.toString(),passwordText.text.toString()).addOnCompleteListener { task->
             if (task.isSuccessful){
-                val intent = Intent(this,MainMenuActivity :: class.java)
+                val intent = Intent(this, MainMenuActivity :: class.java)
                 startActivity(intent)
                 finish()
             }

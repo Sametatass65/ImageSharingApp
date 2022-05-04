@@ -1,4 +1,4 @@
-package com.smt.imageshared
+package com.smt.imageshared.view
 
 import android.content.Context
 import android.content.pm.PackageManager
@@ -16,8 +16,8 @@ import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
+import com.smt.imageshared.R
 import com.smt.imageshared.databinding.ActivityMapsBinding
-import java.util.jar.Manifest
 
 class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
